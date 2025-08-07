@@ -44,24 +44,24 @@ function LastSection() {
       <h1 className="font-bold text-2xl text-red-700 text-center">
         Why Post Free Ads on KuchBhi?
       </h1>
-      <p className="text-wrap text-center py-5 text-gray-600">
+      <p className="text-sm sm:text-lg text-wrap text-center py-5 text-gray-600">
         KuchBhi makes online buying and selling simple, fast, and completely
         free across Pakistan. Here’s why thousands of users trust us daily.
       </p>
-      <div className="flex gap-50 py-5">
+      <div className="flex flex-col md:flex-row justify-center gap-10 py-5">
         {cusData.map((items) => (
-          <div className="w-1/3">
+          <div className=" sm:w-1/3 text-center">
             <h1 className="text-4xl font-bold">{items.head}</h1>
             <p className="text-md">{items.head}</p>
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-between w-[80%] gap-5 py-10">
+      <div className="flex flex-wrap justify-between lg:justify-around gap-4 py-10 px-10">
         {cardData.map((items) => (
-          <div className="h-70 w-1/4 flex flex-col items-start justify-center gap-8 shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-2 rounded-2xl">
+          <div className="w-full sm:w-[48%] md:w-[45%] lg:w-[20%] flex flex-col items-start gap-4 shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-5 rounded-2xl bg-white">
             <span className="text-4xl">{items.icon}</span>
-            <h3 className="font-bold">{items.heading}</h3>
-            <p className="text-wrap">{items.text}</p>
+            <h3 className="font-bold text-lg">{items.heading}</h3>
+            <p className="text-sm text-gray-600">{items.text}</p>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import HeadingTitle from "./HeadingTitle";
-import laptop from "../data/Popular Categories/Electronics.webp";
+import laptop from "../assets/data/Popular Categories/Electronics.webp";
 
 function QuickLinks() {
   return (

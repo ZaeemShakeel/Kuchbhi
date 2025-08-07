@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../data/logo/KBLogo.webp";
-import googleLogo from "../data/logo/googleplay.png";
+import logo from "../assets/data/logo/KBLogo.webp";
+import googleLogo from "../assets/data/logo/googleplay.png";
 
 function Footer() {
   const footerData = [
@@ -62,15 +62,16 @@ function Footer() {
           <h2 className="font-semibold border-b border-gray-300 w-full mb-2">
             Get Our App
           </h2>
-          <img src={googleLogo} alt="google playstore" className="w-32 mt-2" />
+          <img src={googleLogo} alt="google playstore" className="w-32" />
         </div>
       </div>
 
-      <div className=" w-80 border-t border-gray-300 py-2    text-center text-sm m-auto">
+      <div className="w-80 border-t border-gray-300 py-2 text-center text-sm m-auto">
         <p>
           Copyright © 2025 | Created by{" "}
           <a
             href="https://zaeemshakeel.netlify.app/"
+            target="blank"
             className="underline font-semibold"
           >
             Zaeem Shakeel

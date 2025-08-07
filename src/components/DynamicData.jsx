@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import HeadingTitle from "./HeadingTitle";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+dayjs.extend(relativeTime);
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
@@ -9,30 +9,29 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-dayjs.extend(relativeTime);
+function DynamicData({ category, title }) {
+  const [apiData, setApiData] = useState([]);
 
-function ShopCards() {
-  const [adsData, setAdsData] = useState([]);
+  const apiURL = `https://4824.kuchbhi.io/ads/fetchAllSpecificAds/${category}`;
 
   useEffect(() => {
-    getAdsData();
-  }, []);
+    getApiData();
+  }, [category]);
 
-  async function getAdsData() {
+  async function getApiData() {
     try {
-      const response = await fetch("https://4824.kuchbhi.io/ads/fetchAllAds");
+      const response = await fetch(apiURL);
       const data = await response.json();
-      console.log(data);
-      setAdsData(data);
+      setApiData(data);
     } catch (err) {
-      console.error("Failed to fetch ads:", err);
+      console.error("Failed to Fetch data from API");
     }
   }
 
   return (
     <div className="px-4 sm:px-10 md:px-20 my-10">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <HeadingTitle title="Latest Free Ads Posted in Pakistan – Mobiles, Cars, Electronics & More" />
+        <h1 className="font-bold sm:text-2xl text-lg text-red-700">{title}</h1>
         <a href="/" className="text-lg font-bold text-red-600 hover:underline">
           See all
         </a>
@@ -65,8 +64,8 @@ function ShopCards() {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {adsData?.length > 0 &&
-            adsData.map((data, index) => (
+          {apiData?.length > 0 &&
+            apiData.map((data, index) => (
               <SwiperSlide key={index}>
                 <div className="w-full bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-200 cursor-pointer my-10">
                   <div className="w-full aspect-[4/3] bg-gray-100 overflow-hidden">
@@ -98,4 +97,4 @@ function ShopCards() {
   );
 }
 
-export default ShopCards;
+export default DynamicData;

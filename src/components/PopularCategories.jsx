@@ -1,11 +1,11 @@
 import React from "react";
-import laptop from "../data/Popular Categories/Electronics.webp";
-import Furniture from "../data/Popular Categories/Furniture.webp";
-import RealEstate from "../data/Popular Categories/Real-Estate.webp";
-import Vehicle from "../data/Popular Categories/Vehicle.webp";
-import Mobiles from "../data/Popular Categories/Mobiles.webp";
-import BeautyProducts from "../data/Popular Categories/BeautyProducts.webp";
-import Books from "../data/Popular Categories/Books.webp";
+import laptop from "../assets/data/Popular Categories/Electronics.webp";
+import Furniture from "../assets/data/Popular Categories/Furniture.webp";
+import RealEstate from "../assets/data/Popular Categories/Real-Estate.webp";
+import Vehicle from "../assets/data/Popular Categories/Vehicle.webp";
+import Mobiles from "../assets/data/Popular Categories/Mobiles.webp";
+import BeautyProducts from "../assets/data/Popular Categories/BeautyProducts.webp";
+import Books from "../assets/data/Popular Categories/Books.webp";
 import HeadingTitle from "./HeadingTitle";
 
 function PopularCategories() {
@@ -40,11 +40,11 @@ function PopularCategories() {
     },
   ];
   return (
-    <div className="px-20 py-10">
+    <div className="px-5 sm:px-10 md:px-20  ">
       <HeadingTitle title="Explore Popular Categories in Pakistan for Buying & Selling" />
-      <div className="flex items-center justify-evenly flex-wrap">
+      <div className="flex items-center justify-evenly flex-wrap w-full">
         {popData.map((items, index) => (
-          <div className="w-1/8 flex flex-col items-center py-10 hover:group ">
+          <div className="w-1/ flex flex-col items-center py-10 hover:group ">
             <div className="bg-gray-100 rounded-full w-40 h-40 flex justify-center items-center">
               <img
                 src={items.img}

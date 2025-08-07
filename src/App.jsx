@@ -10,15 +10,21 @@ import ShopCards from "./components/ShopCards";
 import QuickLinks from "./components/QuickLinks";
 import LastSection from "./components/LastSection";
 import Footer from "./components/Footer";
+import DynamicData from "./components/DynamicData";
 
 function App() {
   return (
     <>
       <Header />
-      <Categories />
+      {/* <Categories /> */}
       <Hero />
       <PopularCategories />
       <ShopCards />
+      <DynamicData
+        category="electronics"
+        title="Explore Electronic Ads in Pakistan"
+      />
+      <DynamicData category="mobiles" title="Explore Mobile Ads in Pakistan" />
       {/* <QuickLinks /> */}
       <LastSection />
       <Footer />
