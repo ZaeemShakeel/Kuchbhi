@@ -11,7 +11,7 @@ import "swiper/css/scrollbar";
 
 dayjs.extend(relativeTime);
 
-function ShopCards() {
+function ShopCards({ category }) {
   const [adsData, setAdsData] = useState([]);
 
   useEffect(() => {

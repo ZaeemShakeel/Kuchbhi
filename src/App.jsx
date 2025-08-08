@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
@@ -19,12 +17,21 @@ function App() {
       {/* <Categories /> */}
       <Hero />
       <PopularCategories />
-      <ShopCards />
+      {/* <ShopCards /> */}
+      <DynamicData
+        category="vehicles"
+        title="Latest Free Ads Posted in Pakistan – Mobiles, Cars, Electronics & More"
+      />
       <DynamicData
         category="electronics"
         title="Explore Electronic Ads in Pakistan"
       />
-      <DynamicData category="mobiles" title="Explore Mobile Ads in Pakistan" />
+      <DynamicData
+        category="furniture"
+        title="Explore Furniture Ads in Pakistan"
+      />
+      <DynamicData category="mobile" title="Explore Mobile Ads in Pakistan" />
+      <DynamicData category="fashion" title="Explore Mobile Ads in Pakistan" />
       {/* <QuickLinks /> */}
       <LastSection />
       <Footer />
