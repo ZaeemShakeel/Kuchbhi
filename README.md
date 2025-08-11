@@ -1,12 +1,10 @@
-# React + Vite
+Name of Project: kuchbhi,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Developed by: Zaeem Shakeel,
 
-Currently, two official plugins are available:
+Description: This is a exact copy of Kuchbhi.io it is itself a looking like website of OLX and have same functionalities,
+I have this task by the dev team who build this website "Kuchbhi.io", To show my dev skill. I build responsive and interactive
+website as they want, I implemented Get API to fetch data from there API, first I use context api then I convert that into
+Redux toolkit for better performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+My portfolio link: https://zaeemshakeel.netlify.app/
