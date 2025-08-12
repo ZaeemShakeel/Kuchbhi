@@ -1,5 +1,9 @@
 Name of Project: kuchbhi,
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
 Developed by: Zaeem Shakeel,
 
 Description: This is a exact copy of Kuchbhi.io it is itself a looking like website of OLX and have same functionalities,
@@ -7,4 +11,5 @@ I have this task by the dev team who build this website "Kuchbhi.io", To show my
 website as they want, I implemented Get API to fetch data from there API, first I use context api then I convert that into
 Redux toolkit for better performance.
 
+Project Link: https://kuchbhibyzaeem.netlify.app/
 My portfolio link: https://zaeemshakeel.netlify.app/
