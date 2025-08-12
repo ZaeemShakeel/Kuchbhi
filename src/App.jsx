@@ -18,10 +18,12 @@ function App() {
       <Hero />
       <PopularCategories />
       {/* <ShopCards /> */}
-      <DynamicData
-        category="vehicles"
+      {/* <DynamicData
+        category="animals"
         title="Latest Free Ads Posted in Pakistan – Mobiles, Cars, Electronics & More"
-      />
+      /> */}
+      <DynamicData category="mobile" title="Explore Mobile Ads in Pakistan" />
+
       <DynamicData
         category="electronics"
         title="Explore Electronic Ads in Pakistan"
@@ -31,7 +33,6 @@ function App() {
         title="Explore Furniture Ads in Pakistan"
       />
       <DynamicData category="mobile" title="Explore Mobile Ads in Pakistan" />
-      <DynamicData category="fashion" title="Explore Mobile Ads in Pakistan" />
       {/* <QuickLinks /> */}
       <LastSection />
       <Footer />
